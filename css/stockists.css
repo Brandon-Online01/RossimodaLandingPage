@@ -1,0 +1,121 @@
+@font-face {font-family: "Termina W05 Bold";
+    src: url("../assets/@font-face/e9591193aa91ce28ad8c8f91c03f6c7b.eot"); /* IE9*/
+    src: url("../assets/@font-face/e9591193aa91ce28ad8c8f91c03f6c7b.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../assets/@font-face/e9591193aa91ce28ad8c8f91c03f6c7b.woff2") format("woff2"), /* chrome、firefox */
+    url("../assets/@font-face/e9591193aa91ce28ad8c8f91c03f6c7b.woff") format("woff"), /* chrome、firefox */
+    url("../assets/@font-face/e9591193aa91ce28ad8c8f91c03f6c7b.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../assets/@font-face/e9591193aa91ce28ad8c8f91c03f6c7b.svg#Termina W05 Bold") format("svg"); /* iOS 4.1- */
+  }
+body {
+    color: #fff;
+    transition: 0.4s all ease-in-out;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    letter-spacing: 2px;
+    font-weight: 400 !important;
+    font-size: 1em !important;
+    font-family:"Termina W05 Bold" !important;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.pageContainer {
+    align-items: center;
+}
+.legacy {
+    color: #fff;
+    text-decoration: none;
+    float: left;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+}
+.legacy:hover {
+    text-decoration: none;
+    color: #c09049;
+}
+.stockists {
+    float: right;
+    color: #fff;
+    text-decoration: none;
+    border: 3px solid #fff;
+    padding: .4em;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+}
+.stockists:hover {
+    text-decoration: none;
+    color: #c09049;
+    border: 3px solid #c09049;
+}
+.logo {
+    margin: 0 auto;
+    width: 100%;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+}
+@media screen and (min-width: 480px){
+    .altLogo {
+        display: none !important;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 990px) {
+    .legacy {
+        margin: 0 3em 0 0 !important;
+        font-size: 1em !important;
+        width: 10%;
+    }
+    .logo {
+        margin: 0 auto 0 2em !important;
+        width: 80%;
+    }
+}
+@media screen and (max-width: 768px){
+    .pageContainer {
+        display: block;
+    }
+    .legacy {
+        margin: 0 0 3em 0 !important;
+    }
+    .stockists {
+        margin: 3em 0 0 0 !important;
+        float: left;
+    }
+    .altLogo {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 480px){
+    .pageContainer {
+        display: block;
+    }
+    .stockists {
+        margin: 3em 0 0 0 !important;
+        float: left;
+        bottom: 0 !important;
+    }
+}
+/* .stockists page */
+.stockistsPage {
+    background-color: #000;
+}
+.header {
+    margin: 5em auto !important;
+    width: 500px;
+    background-color: #fff;
+    color: #000;
+    align-items: center;
+}
+.altLogo {
+    display: block;
+    width: 50%;
+    float: left !important;
+}
+h3 {
+    font-size: 20px !important;
+}
+p {
+    font-size: clamp(10px, 1.5vw, 15px) !important;
+}
